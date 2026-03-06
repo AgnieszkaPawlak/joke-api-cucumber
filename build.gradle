@@ -23,13 +23,15 @@ java {
 }
 
 dependencies {
+    implementation 'io.rest-assured:rest-assured:5.5.0'
+
     testImplementation 'org.junit.jupiter:junit-jupiter:5.10.2'
+    testImplementation 'org.junit.platform:junit-platform-suite-api:1.10.2'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher:1.10.2'
 
     testImplementation 'io.cucumber:cucumber-java:7.18.1'
     testImplementation 'io.cucumber:cucumber-junit-platform-engine:7.18.1'
 
-    testImplementation 'io.rest-assured:rest-assured:5.5.0'
     testImplementation 'org.assertj:assertj-core:3.26.3'
 }
 
