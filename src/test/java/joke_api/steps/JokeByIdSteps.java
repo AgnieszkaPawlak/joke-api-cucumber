@@ -20,10 +20,15 @@ public class JokeByIdSteps {
         joke = response.as(Joke.class);
     }
 
+    @Then("joke by id response status should be {int}")
+    public void jokeByIdResponseStatusShouldBe(int expectedStatus) {
+        assertThat(response).isNotNull();
+        assertThat(response.statusCode()).isEqualTo(expectedStatus);
+    }
+
     @Then("the returned joke id should be {int}")
     public void theReturnedJokeIdShouldBe(int expectedId) {
         assertThat(response).isNotNull();
-        assertThat(response.statusCode()).isEqualTo(200);
         assertThat(joke).isNotNull();
         assertThat(joke.getId()).isEqualTo(expectedId);
         assertThat(joke.getSetup()).isNotBlank();
