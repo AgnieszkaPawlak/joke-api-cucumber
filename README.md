@@ -26,10 +26,10 @@ Target API:
 ```text
 src/main/java/joke_api
   config/ApiConfig.java
-  client/OfficialJokeApiClient.java
   model/Joke.java
 
 src/test/java/joke_api
+  client/OfficialJokeApiClient.java
   runner/CucumberTest.java
   steps/RandomJokeSteps.java
   steps/JokeByIdSteps.java
