@@ -15,8 +15,8 @@ Feature: Random joke contract
       | setup     |
       | punchline |
     And response fields should match patterns:
-      | field     | pattern      |
-      | id        | ^\d+$        |
-      | type      | ^[a-zA-Z]+$  |
-      | setup     | ^.+$         |
-      | punchline | ^.+$         |
+      | field     | pattern     |
+      | id        | ^\d+$       |
+      | type      | ^[a-zA-Z]+$ |
+      | setup     | ^.+$        |
+      | punchline | ^.+$        |

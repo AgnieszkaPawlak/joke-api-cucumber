@@ -1,3 +1,4 @@
+@smoke @random
 Feature: Random joke endpoint
 
   Scenario: Get random joke and verify response structure
